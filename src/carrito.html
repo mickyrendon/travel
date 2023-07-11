@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi carrito - Around the world</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../src/styles/styles.css">
+</head>
+<body class="w-100 h-100 d-inline-block">
+  <header>
+        <!-- Menú de navegación -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="../index.html">
+            <img src="../assets/logo.png" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./paquetes.html">Paquetes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">Contacto</a>
+            </li>
+            <a class="nav-link active" href="./carrito.html">Mi carrito</a>
+          </ul>
+        </div>
+      </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1 class="text-center mt-5">Carrito de Compras</h1>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Producto</th>
+            <th>Precio</th>
+            <th>Cantidad</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Producto 1</td>
+            <td>$10.00</td>
+            <td>2</td>
+            <td>$20.00</td>
+          </tr>
+          <tr>
+            <td>Producto 2</td>
+            <td>$15.00</td>
+            <td>1</td>
+            <td>$15.00</td>
+          </tr>
+          <tr>
+            <td>Producto 3</td>
+            <td>$12.50</td>
+            <td>3</td>
+            <td>$37.50</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3" class="text-right">Total:</td>
+            <td>$72.50</td>
+          </tr>
+        </tfoot>
+      </table>
+      <div class="text-center">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Finalizar Compra</button>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+          <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">¡Bien Hecho!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+          </button>
+          </div>
+          <div class="modal-body">
+          <p>Tu compra fue realizada con éxito, gracias por comprar en ¡Around the world bebé! que disfrutes el viaje.</p>
+          </div>
+          <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">cerrar</button>
+          </div>
+      </div>
+      </div>
+  </div>
+  </main>
+
+  <footer class="bg-dark text-white py-3 text-center position-absolute fixed-bottom">
+    <p>Derechos de autor &copy; 2023 Around the world. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
